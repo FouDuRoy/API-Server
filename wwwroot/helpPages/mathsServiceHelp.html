@@ -16,21 +16,29 @@
     <strong>veuillez utiliser la variable 'op' pour vos requêtes,
         'x' et 'y' pour les opérations et 'n' pour la factorisation et les services de nombre premiers</strong>
     <br><br>
-    pour une addition: <strong>'+'</strong>
+    pour une addition:
+     <strong>'? op = + & x = number & y = number return {"op":"+","x":number,"y":number,"value": x + y}'</strong>
     <br><br>
-    pour une soustraction: <strong>'-'</strong>
+    pour une soustraction:
+    <strong>'? op = - & x = number & y = number return {"op":"-","x":number,"y":number,"value": x - y}'</strong>
     <br><br>
-    pour une multiplication: <strong>'*'</strong>
+    pour une multiplication:
+    <strong>'? op = * & x = number & y = number return {"op":"*","x":number,"y":number,"value": x * y}'</strong>
     <br><br>
-    pour une division: <strong>'/'</strong>
+    pour une division:
+    <strong>'? op = / & x = number & y = number return {"op":"/","x":number,"y":number,"value": x / y}'</strong>
     <br><br>
-    pour un modulo: <strong>'%'</strong>
+    pour un modulo:
+    <strong>'? op = % & x = number & y = number return {"op":"%","x":number,"y":number,"value": x % y}'</strong>
     <br><br>
-    pour un factoriel: <strong>'!'</strong>
+    pour un factoriel:
+    <strong>'? op = ! & n = integer return {"op":"!","n":integer,"value": n!}'</strong>
     <br><br>
-    pour savoir si un nombre est premier : <strong>'p'</strong>
+    pour savoir si un nombre est premier :
+    <strong>'? op = p & n = integer return {"op":"p","n":integer,"value": true if n is a prime number}'</strong>
     <br><br>
-    pour savoir la position d'un nombre premier : <strong>'np'</strong>
+    pour savoir la position d'un nombre premier :
+    <strong>'? op = np & n = integer return {"op":"np","n":integer,"value": nth prime number}'</strong>
 
 
     Merci et bonne journée!
