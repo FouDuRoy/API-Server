@@ -6,8 +6,14 @@ const fs = require('fs');
 //Check the number of arguments
 function CheckNbrOfArgs(operation,length)
 {
-    if((operation == '!' && length > 2) || operation != '!' && length > 3)
+    if((operation == '!' || operation == 'p' || operation == 'np'))
     {
+        if(length > 2)
+        return true;
+    }
+    else
+    {
+        if(length > 3)
         return true;
     }
     return false;
